@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: tapaswisampleapi 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tapaswisampleapi
+  template:
+    metadata:
+      labels:
+        app: tapaswisampleapi 
+    spec:
+      containers:
+        - name: tapaswisampleapi 
+          image: deploymenttapaswi.azurecr.io/tapaswisampleapi
+          ports:
+          - containerPort: 80
