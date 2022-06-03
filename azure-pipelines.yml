@@ -11,7 +11,7 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'acr'
+  dockerRegistryServiceConnection: 'deploymenttapaswi'
   imageRepository: 'tapaswisampleapi'
   containerRegistry: 'deploymenttapaswi.azurecr.io'
   dockerfilePath: '**/Dockerfile'
